@@ -1,0 +1,33 @@
+<!-- index.html is by default root file which is rendered as root file when we go to site's link (only when we use .html)
+ -->
+ {{!-- hbs is similar to html files but in these files we can inject some extra data as a dynamic content  --}}
+{{!-- <!doctype html>   --}}
+<html>
+<head>
+    <link rel="stylesheet" href="./stylesheets/style.css"> 
+<title>Weather App</title>
+</head>
+<body>
+    {{!-- way of importing other hbs files --}}
+    {{>header}} 
+    <div class="page-wrap">
+        <div class="backimg">
+            <h1 class="center"> Weather </h1>
+    <form class="center">
+        <input type="text"  placeholder="Location">
+        <button> Search </button>
+    </form>
+    <h2 class="center"> 
+   {{!-- Syntax of hbs i.e.  way of accessing passed values  -- --}}
+    </h2>
+    <p class="center" id="location"></p>
+    <p class="center" id="forecast"> </p>
+        </div>
+     <h1 style="font-weight: bold; color: rgb(140, 185, 223);" class="center" > Use This Site to Check Accurate Weather! </h1>
+    {{!-- <img class="img-res" src="https://images.unsplash.com/photo-1508697014387-db70aad34f4d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" alt="weather"> --}}
+    </div>
+    {{>footer}}
+    <script src="JS/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+body{
+    background-color: #232323;
+    color: white;
+    height: 100%;
+    margin: 0;
+}
+::selection{
+    color: black;
+    text-shadow: 0 2px 5px black;
+   background: rgb(243, 235, 235);
+}
+div.page-wrap{
+    min-height: 100%;
+}
+div.backimg{
+    background: url("https://monodomo.com/free-wallpapers/dark-nature-image-For-Free-Wallpaper-1.jpg");
+    /* background: url("https://www.noaa.gov/sites/default/files/styles/scale_crop_1440x597/public/thumbnails/image/weather1_0.jpg?itok=5th0HCuN"); */
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    /* color: rgb(80, 211, 80); */
+    height: 380px;
+    width: 100%;
+    margin: 0;
+    box-shadow: 0 2px 6px gray;
+    color: white;
+    font-weight: bold;
+    font-size: 1.3em;
+    text-shadow: 0 1px 2px black;
+}
+div.Footer{
+    border-top: 5px solid rgba(235, 179, 106, 0.767);
+    background-color: rgb(248, 250, 248);
+    /* flex-grow: 1; */
+    width: 100%;
+    height: auto;
+    position: relative;
+    /* box-sizing: border-box; */
+    margin: 0;
+    left: 0;
+}
+div.footer-cont{
+    padding: 25px;
+    color: black;
+}
+div.footer-bott{
+    margin: 0;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background : rgba(92, 213, 218, 0.89);
+}
+.img-res{
+    height: 380px;
+    width: 100%;
+    margin: 0;
+    box-shadow: 0 2px 6px gray;
+}
+h1{
+    color: rgba(230, 210, 122, 0.979);
+}
+.center{
+    text-align: center;
+}
+ a{
+     color: rgba(250, 170, 77, 1);
+ }
+ a:hover{
+     color:rgb(175, 59, 44) ;
+ }
+ input{
+    border: 1px solid goldenrod;
+    padding: 8px;
+ } 
+ button{
+    padding: 8px;
+    border: 1px solid forestgreen;
+    color: rgb(100, 219, 100);
+    background: none;
+ } 
+button:hover{
+    background: forestgreen;
+    color: white;
+}
+.err{
+    color: rgb(233, 99, 99);
+}
+p{
+    text-shadow: 0 2px 4px black;
+}
+img.dev{
+    height: 260px;
+    width: 250px;
+    border: 1.6px solid goldenrod;
+    border-radius: 200px;
+    box-shadow: 0 4px 6px khaki;
+    transition: all 0.6s ease-out;
+}
+img.dev:hover{
+    transform: rotate(360deg);
+    box-shadow: 0 6px 10px lavenderblush;
+}
