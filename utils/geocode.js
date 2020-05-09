@@ -32,7 +32,7 @@ const url="http://api.weatherstack.com/current?access_key=fa2a448fd3d984a349383e
    } else if(res.body.error){
         callback("ERROR! "+res.body.error.info,undefined);
    } else{
-    callback(null,res.body.current.weather_descriptions[0] + ". current Temprature in " + res.body.location.region + " is: " +res.body.current.temperature+ " degree celcius"+" and Feels Like : "+ res.body.current.feelslike+" degree celcius" );
+    callback(null,res.body.current.weather_descriptions[0] + ". current Temprature in " + res.body.location.region + " is: " +res.body.current.temperature+ " degree celcius"+" and Feels Like : "+ res.body.current.feelslike+" degree celcius and "+ "Humidity is: "+ res.body.current.humidity + "   Precipitation: " + res.body.current.precip +" % ");
    }
 })
 }
